@@ -10,7 +10,7 @@ function triggerAnimation(entries) {
 const options = {
   root: null,
   rootMargin: "0px",
-  threshold: .70
+  threshold: 1
 }
 
 const observer = new IntersectionObserver(triggerAnimation, options);
