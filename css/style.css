@@ -1,22 +1,18 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+
 html {
   box-sizing: border-box;
 }
 
 body {
-  /* min-height: 60rem; */
-  padding: 1rem;
-}
-
-*,
-*:before,
-*:after {
+  max-height: 50rem;
   margin: 0;
-  box-sizing: inherit;
-}
-
-header {
-  text-align: center;
-  text-transform: uppercase;
 }
 
 h1 {
@@ -28,70 +24,38 @@ h3 {
   font-weight: 400;
 }
 
-.plan-personalizado--text {
-  width: 40rem;
-}
-
 .header-title {
-  font-size: 2rem;
-}
-
-@media (min-width: 768px) {
-  .hero {
-    height: 10px;
-    min-height: 100px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    gap: 3rem;
-    align-items: center;
-    padding: 1rem;
-    background-position: center;
-    overflow: hidden;
-    flex-direction: initial;
-  }
-
-  .hero__title {
-    height: 3rem;
-    margin: 1rem 0;
-    text-transform: capitalize;
-  }
-
-  .hero__img {
-    margin: 0;
-    background-size: 100px;
-    width: 50vw;
-  }
-
+  font-size: 1.5rem;
+  padding: .3rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .hero {
-  flex-direction: column;
-  height: 100%;
-  min-height: 90%;
-  width: 100%;
-  max-width: 120rem;
-  margin: 0 auto;
   display: flex;
-  gap: 3rem;
   align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 0 auto;
   padding: 1rem;
-  background-position: center;
   overflow: hidden;
 }
 
 .hero__title {
-  height: 3rem;
   margin: 1rem 0;
   text-transform: capitalize;
 }
 
-.hero__img {
-  margin: 0;
-  background-size: 400px;
-  width: 50vw;
+.hero__figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.hero__img {
+  width: 90%;
+  height: 13rem;
+}
 
 .hero--reverse {
   flex-direction: column;
@@ -115,7 +79,6 @@ h3 {
   --transform: scale(1);
 }
 
-
 [data-animation="up"] {
   opacity: 0;
   transform: translateY(100%);
@@ -125,8 +88,21 @@ h3 {
   --transform: translateY(0);
 }
 
-
 .unset {
   opacity: var(--opacity);
   transform: var(--transform);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  height: 3.5rem;
+  padding: .8rem;
+  background-color: rgb(67, 67, 240);
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+}
+
+.footer__drechos-autor {
+  color: white;
 }
