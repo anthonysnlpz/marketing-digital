@@ -1,8 +1,8 @@
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
   margin: 0;
+  box-sizing: inherit;
 }
 
 
@@ -96,6 +96,36 @@ h3 {
 
 .hero--reverse {
   flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero {
+    padding: 0;
+    gap: 2rem;
+  }
+
+  .hero-personalizado {
+    grid-column: -3 / -1;
+  }
+
+  .hero__title {
+    margin: 3rem 0;
+  }
+
+  .hero__img {
+    height: 12rem;
+    width: auto;
+  }
 }
 
 [data-animation="fade"] {
