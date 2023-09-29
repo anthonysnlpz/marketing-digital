@@ -98,6 +98,12 @@ h3 {
   flex-direction: column;
 }
 
+.plan-personalizado--text {
+  max-width: 90%;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
 @media (min-width: 768px) {
   .nav {
     flex-direction: row;
@@ -125,6 +131,12 @@ h3 {
   .hero__img {
     height: 12rem;
     width: auto;
+  }
+
+  .plan-personalizado--text {
+    max-width: 90%;
+    text-align: center;
+    margin-bottom: 1.3rem;
   }
 }
 
