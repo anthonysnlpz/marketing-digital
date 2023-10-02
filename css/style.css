@@ -26,7 +26,7 @@ h3 {
 }
 
 .contenedor {
-  width: 90%;
+  width: 80%;
   max-width: 120rem;
   margin: 0 auto;
   overflow: hidden;
@@ -100,8 +100,19 @@ h3 {
 
 .plan-personalizado--text {
   max-width: 90%;
-  text-align: center;
   margin-bottom: 1.5rem;
+}
+
+.btn-plan {
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+  font-weight: 800;
+  padding: .8rem;
+  margin-top: -1rem;
+  border-radius: 1rem;
+  background-color: #6898f1;
+  color: #fff;
 }
 
 @media (min-width: 768px) {
@@ -135,8 +146,19 @@ h3 {
 
   .plan-personalizado--text {
     max-width: 90%;
-    text-align: center;
     margin-bottom: 1.3rem;
+  }
+
+  .btn-plan {
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 800;
+    padding: .8rem;
+    margin-top: -1rem;
+    border-radius: 1rem;
+    background-color: #6898f1;
+    color: #fff;
   }
 }
 
