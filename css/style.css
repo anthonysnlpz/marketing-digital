@@ -115,6 +115,12 @@ h3 {
   margin: 0 auto;
   padding: 1rem;
   overflow: hidden;
+  text-align: center;
+  gap: 2rem;
+}
+
+.hero-personalizado {
+  gap: 1rem;
 }
 
 .hero__title {
@@ -135,11 +141,6 @@ h3 {
 
 .hero--reverse {
   flex-direction: column;
-}
-
-.plan-personalizado--text {
-  max-width: 90%;
-  margin-bottom: 1.5rem;
 }
 
 .btn-plan {
@@ -168,7 +169,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 3.5rem;
+  height: 4.5rem;
   padding: .5rem;
   background-color: #657ED4;
   border-top-left-radius: 1rem;

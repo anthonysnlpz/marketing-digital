@@ -21,7 +21,6 @@ imagenes.forEach(imagen => {
   observer.observe(imagen)
 })
 
-
 // animacion para menu principal
 const menu = document.querySelector('.nav__menu');
 const menuList = document.querySelector('.nav__list');
@@ -37,36 +36,48 @@ function restartFirstImageAnimation() {
   primeraImagen.classList.add('unset');
 }
 
-// logica para animacion de menu principal
+// Función para ocultar todas las imágenes de hero__img
+function hideImages() {
+  imagenesHero.forEach((imagen) => {
+    imagen.classList.add('hidden');
+  });
+}
+
+// Función para mostrar todas las imágenes de hero__img
+function showImages() {
+  imagenesHero.forEach((imagen) => {
+    imagen.classList.remove('hidden');
+  });
+}
+
+// Función para cerrar el menú y reiniciar la animación de la primera imagen
+function closeMenu() {
+  menuList.classList.remove('nav__list--show');
+  body.classList.remove('no-scroll');
+
+  // Mostrar todas las imágenes de hero__img
+  showImages();
+
+  // Reiniciar la animación de la primera imagen al cerrar el menú
+  restartFirstImageAnimation();
+}
+
 menu.addEventListener('click', function () {
   menuList.classList.toggle('nav__list--show');
   body.classList.toggle('no-scroll');
 
-  // Ocultar gradualmente todas las imágenes de hero__img
-  setTimeout(() => {
-    imagenesHero.forEach((imagen) => {
-      imagen.classList.toggle('hidden');
-    });
-  }, 100); // Agrega un pequeño retraso antes de agregar la clase hidden
-
-  if (!menuList.classList.contains('nav__list--show')) {
-    // Reiniciar la animación de la primera imagen al cerrar el menú
-    restartFirstImageAnimation();
+  if (menuList.classList.contains('nav__list--show')) {
+    // Ocultar gradualmente todas las imágenes de hero__img al abrir el menú
+    hideImages();
+  } else {
+    // Cerrar el menú y reiniciar la animación al cerrarlo
+    closeMenu();
   }
 });
 
 links.forEach(function (link) {
   link.addEventListener('click', function () {
-    menuList.classList.remove('nav__list--show');
-    body.classList.remove('no-scroll');
-
-    // Mostrar todas las imágenes de hero__img
-    imagenesHero.forEach((imagen) => {
-      imagen.classList.remove('hidden');
-    });
-
-    // Reiniciar la animación de la primera imagen al cerrar el menú
-    restartFirstImageAnimation();
+    // Cierra el menú al hacer clic en un enlace de navegación
+    closeMenu();
   });
 });
-
