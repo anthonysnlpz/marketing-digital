@@ -37,6 +37,7 @@
 
   <main class="grid contenedor">
 
+    <!-- Info planes que ofrecemos -->
     <section class="hero">
       <div class="hero__texts">
         <h1 class="hero__title">planes que ofrecemos</h1>
@@ -47,51 +48,148 @@
       </figure>
       <h3>Consulta nuestros cuatro planes que ofrecemos</h3>
     </section>
+    <!-- .Info planes que ofrecemos -->
 
+    <!-- Info plan basico -->
     <section class="hero">
       <div class="hero__texts">
         <h2 class="hero__title">plan básico</h2>
       </div>
       <figure class="hero__figure">
-        <img src="./assets/imgs principales/python-e.svg" alt="svg de pago representativo" class="hero__img"
+        <img src="./assets/imgs principales/plan-basico.svg" alt="svg de pago representativo" class="hero__img"
           data-animation="fade" />
       </figure>
       <h3>Desde 3,000 a 8,000 pesos mexicanos por mes.</h3>
-      <input class="btn-plan" type="button" value="Consultar plan">
+      <input class="btn-plan" type="button" value="Consultar plan" data-plan="basico">
     </section>
+    <!-- .Info plan basico -->
 
+    <!-- Card plan basico -->
+    <!-- Overlay para el Plan Básico (agregar después de la sección) -->
+    <div class="plan-card-overlay" id="overlay-basico">
+      <!-- Tarjeta del Plan Básico (agregar después de la sección) -->
+      <div class="plan-card" id="basico-card">
+        <button class="close-button">X</button> <!-- La "X" para cerrar -->
+        <h2>Plan Básico</h2>
+        <img src="./assets/imgs principales/plan-basico-card.svg" alt="">
+        <ul class="plan-features">
+          <li><strong>Gestión de Redes:</strong> Creación y publicación de contenido regular en las redes sociales de
+            tus clientes, incluyendo programación de publicaciones, interacción con seguidores y análisis de métricas.
+          </li>
+          <li><strong>Publicidad en Redes Sociales:</strong> Configuración y gestión de campañas publicitarias en
+            plataformas como Facebook, Instagram, Twitter o LinkedIn.</li>
+          <li><strong>Optimización de Perfiles:</strong> Mejora de la apariencia y la información de perfiles en redes
+            sociales para aumentar la visibilidad y la credibilidad.</li>
+          <li><strong>Email Marketing:</strong> Creación y envío de campañas de correo electrónico para promociones,
+            boletines informativos y retención de clientes.</li>
+        </ul>
+      </div>
+    </div>
+    <!-- .Card plan basico -->
+
+
+    <!-- Info plan intermedio -->
     <section class="hero hero--reverse">
       <div class="hero__texts">
         <h2 class="hero__title">plan intermedio</h2>
       </div>
       <figure class="hero__figure">
-        <img src="./assets/imgs principales/facebook-ad-2.svg" alt="svg de pago representativo" class="hero__img"
+        <img src="./assets/imgs principales/plan-intermedio.svg" alt="svg de pago representativo" class="hero__img"
           data-animation="show" />
       </figure>
       <h3>Desde 7,000 y 15,000 pesos mexicanos al mes.</h3>
-      <input class="btn-plan" type="button" value="Consultar plan">
+      <input class="btn-plan" type="button" value="Consultar plan" data-plan="intermedio">
     </section>
+    <!-- .Info plan intermedio -->
 
+    <!-- Card plan intermedio -->
+    <div class="plan-card-overlay" id="overlay-intermedio">
+      <!-- Tarjeta del Plan Intermedio -->
+      <div class="plan-card" id="intermedio-card">
+        <button class="close-button">X</button> <!-- La "X" para cerrar -->
+        <h2>Plan Intermedio</h2>
+        <img src="./assets/imgs principales/plan-intermedio-card.svg" alt="svg de plan intermedio">
+        <ul class="plan-features">
+          <li><strong>SEO (Optimización de Motores de Búsqueda):</strong>Optimización de sitios web y contenido para
+            mejorar la visibilidad en los motores de búsqueda, incluyendo investigación de palabras clave, creación de
+            contenido SEO y construcción de enlaces.
+          </li>
+          <li><strong>Marketing de Contenido:</strong>Desarrollo de estrategias de contenido, creación de blogs,
+            artículos, videos o infografías para atraer y retener a la audiencia.
+          </li>
+          <li><strong>Publicidad en Google Ads:</strong>Configuración y gestión de campañas de publicidad en Google
+            Ads para aumentar la visibilidad en los resultados de búsqueda.
+          </li>
+          <li><strong>Analítica Web:</strong>Seguimiento y análisis del tráfico del sitio web, identificación de
+            oportunidades de mejora y generación de informes (se enfoca en recopilar, medir y analizar datos
+            relacionados con el tráfico y el comportamiento de los usuarios en un sitio web. El objetivo principal de la
+            analítica web es comprender cómo interactúan los visitantes con un sitio web y cómo se puede mejorar la
+            experiencia del usuario y la eficacia de la estrategia de marketing en línea. Aquí tienes una explicación
+            más detallada de la analítica web).
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- .Card plan intermedio -->
+
+    <!-- Info plan avanzado -->
     <section class="hero">
       <div class="hero__texts">
         <h2 class="hero__title">plan avanzado</h2>
       </div>
       <figure class="hero__figure">
-        <img src="./assets/imgs principales/python-a.svg" alt="svg de pago representativo" class="hero__img"
+        <img src="./assets/imgs principales/plan-avanzado.svg" alt="svg de pago avanzado" class="hero__img"
           data-animation="up" />
       </figure>
       <h3>Desde 15,000 y 30,000 pesos mexicanos al mes.</h3>
-      <input class="btn-plan" type="button" value="Consultar plan">
+      <input class="btn-plan" type="button" value="Consultar plan" data-plan="avanzado">
     </section>
+    <!-- .Info plan avanzado -->
+
+    <!-- Card plan avanzado -->
+    <div class="plan-card-overlay" id="overlay-avanzado">
+      <!-- Tarjeta del Plan Avanzado -->
+      <div class="plan-card" id="avanzado-card">
+        <button class="close-button">X</button> <!-- La "X" para cerrar -->
+        <h2>Plan Avanzado</h2>
+        <img src="./assets/imgs principales/plan-avanzado-card.svg" alt="svg pago plan avanzado">
+        <ul class="plan-features">
+          <li><strong>Marketing de Afiliados:</strong> Diseño y gestión de programas de marketing de afiliados para
+            promover los productos o servicios de tus clientes.
+            <ul>
+              <li>Identificación y reclutamiento de afiliados que promocionen los productos de tu cliente a cambio de
+                comisiones.
+              </li>
+              <li>
+                Seguimiento y análisis del rendimiento de los afiliados y optimización continua del programa.
+                Marketing de Contenido Avanzado: Desarrollo de contenido premium como libros electrónicos, webinars o
+                cursos en línea para generar clientes potenciales.
+              </li>
+            </ul>
+          </li>
+          <li><strong>Automatización de Marketing:</strong>
+            Implementación de herramientas de automatización para campañas de correo electrónico, seguimiento de leads y
+            personalización de la experiencia del usuario.
+          </li>
+          <li><strong>Desarrollo de Estrategia Integral de Marketing:</strong>
+            Creación de planes estratégicos a largo plazo que abarquen múltiples canales y tácticas para lograr los
+            objetivos de marketing de tus clientes.
+          </li>
+          <!-- Agrega más características específicas del Plan Avanzado aquí -->
+        </ul>
+      </div>
+    </div>
+    <!-- .Card plan avanzado -->
 
     <section class="hero hero-personalizado">
       <div class="hero__texts">
         <h2 class="hero__title">plan personalizado</h2>
       </div>
       <figure class="hero__figure">
-        <img src="./assets/imgs principales/entrepreneurs-e.svg" alt="svg de pago representativo" class="hero__img"
+        <img src="./assets/imgs principales/plan-personalizado.svg" alt="svg de pago representativo" class="hero__img"
           data-animation="fade" />
       </figure>
+      <!-- <input class="btn-plan" type="button" value="Consultar plan" data-plan="personalizado"> -->
       <h3 class="plan-personalizado--text">El precio del servicio personalizado dependerá en gran medida de los
         servicios
         específicos incluidos y de las
@@ -105,6 +203,7 @@
     <p class="footer__telefono">Telefono: 555-555-5555</p>
   </footer>
   <script src="./js/animaciones.js"></script>
+  <script src="./js/cards.js"></script>
 </body>
 
 </html>
