@@ -23,11 +23,9 @@ html {
 body {
   min-height: 100%;
   width: 100%;
+  max-width: 100vw;
   margin: 0;
-  /* background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
-  background-size: 200%; */
   background-color: #FFFFFF;
-  /* o un tono de gris claro */
   color: #000000;
 }
 
@@ -50,7 +48,8 @@ h3 {
 }
 
 .header {
-  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
   background-color: var(--Azul-Oscuro);
   height: 4rem;
   padding: 0 1rem;
