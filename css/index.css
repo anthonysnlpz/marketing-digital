@@ -484,6 +484,7 @@ h3 {
 
     transform: translate(-100%);
     transition: transform .3s;
+    z-index: 1;
   }
 
   .nav__list--show {
@@ -852,14 +853,14 @@ main.contenedor-contacto {
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas:
     "card mapa"
-    "card formulario";
-  transform: translateX(-100px);
+    "formulario formulario";
+  row-gap: 1rem;
+  margin-top: 4rem;
 }
 
 main.contacto {
   min-height: 100vh;
 }
-
 
 /* Estilos para la card */
 .contenedor-card {
@@ -968,4 +969,95 @@ main.contacto {
 .card-contacto .contenido .datos h3 img {
   width: 40px;
   height: 40px;
+}
+
+/* Estilos para mapa */
+section.mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para fomrulacio de contacto */
+.formulario {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 400px;
+  margin: 0 auto 4rem;
+  grid-area: formulario;
+  margin: 0 auto 2rem;
+}
+
+.formulario h2 {
+  margin: 0;
+  color: #333;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 15px;
+}
+
+.input-container label {
+  font-weight: bold;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-container input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.formulario button {
+  background-color: #007bff;
+  color: var(--Verde-Oliva);
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: var(--Texto-en-Blanco);
+}
+
+.formulario button:hover {
+  background-color: var(--Azul-Oscuro);
+  color: var(--Texto-en-Blanco);
+}
+
+/* Media query para versiones móviles */
+@media screen and (max-width: 768px) {
+  main.contenedor-contacto {
+    height: 100%;
+    margin-top: 4rem;
+    min-height: 100vh;
+    transform: translateX(0);
+    grid-template-columns: 1fr;
+    /* Una sola columna */
+    grid-template-areas:
+      "card"
+      "mapa"
+      "formulario";
+    row-gap: 1rem;
+    z-index: 2;
+  }
+
+  .card-contacto {
+    height: 350px;
+  }
+
+  .card-contacto .contenido .detalles {
+    transform: translateY(0);
+  }
 }

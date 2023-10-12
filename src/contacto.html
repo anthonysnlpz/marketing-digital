@@ -48,9 +48,9 @@
             </h2>
             <h2>Redes sociales</h2>
             <div class="datos">
-              <h3>LinkedIn</h3> <img src="../assets/icons/linkedin.svg" alt="svg de linkedin">
-              <h3>Instagram</h3> <img src="../assets/icons/instagram.svg" alt="svg de instagram">
-              <h3>TikTok</h3> <img src="../assets/icons/tiktok.svg" alt="svg de tiktok">
+              <img src="../assets/icons/linkedin.svg" alt="svg de linkedin">
+              <img src="../assets/icons/instagram.svg" alt="svg de instagram">
+              <img src="../assets/icons/tiktok.svg" alt="svg de tiktok">
             </div>
           </div>
         </div>
@@ -58,8 +58,49 @@
       </section>
     </div>
 
+    <!-- Grid area Mapa -->
+    <section class="mapa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d603.3670281278206!2d-95.2111892993972!3d16.213152572121516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85bfe59398dd7b55%3A0x4b3f75d8b8f073c8!2sDeportiva%20Nte.%2C%20Salina%20Cruz%2C%20Oax.!5e0!3m2!1ses-419!2smx!4v1697097761147!5m2!1ses-419!2smx"
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+    <!-- .Grid area Mapa -->
 
+    <!-- Formulario de contacto -->
+    <section class="formulario">
+      <h2>Formulario de Contacto</h2>
+      <form action="#" method="post">
+        <div class="input-container">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
 
+        <div class="input-container">
+          <label for="apellido-paterno">Apellido Paterno:</label>
+          <input type="text" id="apellido-paterno" name="apellido-paterno" required>
+        </div>
+
+        <div class="input-container">
+          <label for="apellido-materno">Apellido Materno:</label>
+          <input type="text" id="apellido-materno" name="apellido-materno" required>
+        </div>
+
+        <div class="input-container">
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" required>
+        </div>
+
+        <div class="input-container">
+          <label for="correo">Correo Electrónico:</label>
+          <input type="email" id="correo" name="correo" required>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <!-- .Formulario de contacto -->
   </main>
 
   <footer class="footer">
@@ -67,6 +108,7 @@
     <p class="footer__telefono">Telefono: 555-555-5555</p>
   </footer>
 
+  <script src="../src/js/animaciones.js"></script>
 </body>
 
 </html>
