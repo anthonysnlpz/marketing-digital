@@ -1,6 +1,7 @@
 :root {
   --Azul-Oscuro: #1F3A68;
-  --Rosa-Claro: #FFB6C1;
+  /* --Rosa-Claro: #FFB6C1; */
+  --Rosa-Claro: #ee98a5c7;
   --Verde-Oliva: #556B2F;
   --Gris-Azulado: #778899;
   --Marrón-Chocolate: #5D461B;
@@ -842,4 +843,129 @@ h3 {
 .unset {
   opacity: var(--opacity);
   transform: var(--transform);
+}
+
+/* Estilos para seccino de contacto */
+main.contenedor-contacto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "card mapa"
+    "card formulario";
+  transform: translateX(-100px);
+}
+
+main.contacto {
+  min-height: 100vh;
+}
+
+
+/* Estilos para la card */
+.contenedor-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: card;
+}
+
+.card-contacto {
+  position: relative;
+  width: 350px;
+  height: 190px;
+  /* background: var(--Rosa-Claro); */
+  /* background-color: #6982b6; */
+  background-color: var(--Verde-Oliva);
+  border-radius: 1rem;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  transition: .5s;
+}
+
+.card-contacto:hover {
+  height: 450px;
+}
+
+.card__imgBx {
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  transform: translateX(-50%);
+  height: 150px;
+  width: 150px;
+  background: var(--Azul-Oscuro);
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: .3s;
+}
+
+.card-contacto:hover .card__imgBx {
+  height: 250px;
+  width: 250px;
+}
+
+.card__imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-contacto .contenido {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.card-contacto .contenido .detalles {
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  transition: .5s;
+  transform: translateY(145px);
+}
+
+.card-contacto:hover .contenido .detalles {
+  transform: translateY(0);
+}
+
+.card-contacto .contenido .detalles h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  /* color: #3a3939; */
+  color: var(--Texto-en-Blanco);
+  line-height: 1.2em;
+  text-shadow: 0 2px 3px rgb(0, 0, 0);
+}
+
+.card-contacto .contenido .detalles h2 span {
+  font-size: .75em;
+  font-weight: 500;
+  opacity: .6;
+}
+
+.card-contacto .contenido .datos {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+
+.card-contacto .contenido .datos h3 {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  color: var(--Texto-en-Negro);
+  line-height: 1.2em;
+  font-weight: 600;
+}
+
+.card-contacto .contenido .datos h3 img {
+  width: 40px;
+  height: 40px;
 }
