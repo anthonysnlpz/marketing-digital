@@ -1,6 +1,10 @@
 :root {
-  --Azul-Oscuro: #1F3A68;
+  /* Colores principales */
+  --principal: #960018;
+  --verde-agua: #00664E;
+  --azul: #004766;
   /* --Rosa-Claro: #FFB6C1; */
+  --Azul-Oscuro: #1F3A68;
   --Rosa-Claro: #ee98a5c7;
   --Verde-Oliva: #556B2F;
   --Gris-Azulado: #778899;
@@ -58,7 +62,7 @@ h3 {
 .header {
   /* max-width: 100%;
   min-width: 100%; */
-  background-color: var(--Azul-Oscuro);
+  background-color: var(--principal);
   height: 4rem;
   padding: 0 1rem;
 }
@@ -163,7 +167,7 @@ h3 {
   padding: .8rem;
   margin-top: -1rem;
   border-radius: 1rem;
-  background-color: var(--Verde-Oliva);
+  background-color: var(--azul);
   color: var(--Texto-en-Blanco);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
@@ -171,7 +175,7 @@ h3 {
 .btn-plan:hover {
   transform: scale(1);
   box-shadow: 0 0 12px #2d0231, 0 0 10px #fff;
-  background-color: #778899;
+  background-color: var(--verde-agua);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -181,7 +185,7 @@ h3 {
   align-items: center;
   height: 4.5rem;
   padding: .5rem;
-  background-color: var(--Azul-Oscuro);
+  background-color: var(--principal);
   overflow: hidden;
 }
 
@@ -791,7 +795,7 @@ h3 {
     padding: .8rem;
     margin-top: -1rem;
     border-radius: 1rem;
-    background-color: var(--Verde-Oliva);
+    background-color: var(--verde-agua);
     color: var(--Texto-en-Blanco);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
   }
@@ -882,7 +886,7 @@ main.contacto {
   height: 190px;
   /* background: var(--Rosa-Claro); */
   /* background-color: #6982b6; */
-  background-color: var(--Verde-Oliva);
+  background-color: var(--verde-agua);
   border-radius: 1rem;
   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
   transition: .5s;
@@ -899,7 +903,7 @@ main.contacto {
   transform: translateX(-50%);
   height: 150px;
   width: 150px;
-  background: var(--Azul-Oscuro);
+  background: var(--azul);
   border-radius: 20px;
   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
   overflow: hidden;
@@ -1027,8 +1031,8 @@ section.mapa {
 }
 
 .formulario button {
-  background-color: #007bff;
-  color: var(--Verde-Oliva);
+  background-color: var(--verde-agua);
+  color: var(--verde-agua);
   border: none;
   padding: 10px 20px;
   margin-top: 15px;
@@ -1038,7 +1042,7 @@ section.mapa {
 }
 
 .formulario button:hover {
-  background-color: var(--Azul-Oscuro);
+  background-color: var(--azul);
   color: var(--Texto-en-Blanco);
 }
 
