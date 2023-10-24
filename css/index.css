@@ -31,7 +31,13 @@ body {
   color: #000000;
 }
 
-h1 {
+h1.nav__logo {
+  text-align: center;
+  font-size: 2rem;
+  /* text-transform: uppercase; */
+}
+
+h1.hero__title {
   text-align: center;
   text-transform: uppercase;
 }
