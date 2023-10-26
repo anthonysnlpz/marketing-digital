@@ -20,13 +20,13 @@ html {
 }
 
 body {
+  width: 100%;
   min-width: 100%;
-  max-width: auto;
   min-height: 100vh;
   overflow-x: hidden;
   margin: 0;
   background-color: var(--blanco);
-  color: #000000;
+  color: var(--negro);
 }
 
 h1.nav__logo {
@@ -104,8 +104,8 @@ h3 {
   gap: 1rem;
   display: flex;
   justify-content: center;
-  box-shadow: 0 0 12px #2d0231b2, 0 0 10px var(--blanco);
-  background-color: var(--blanco);
+  /* box-shadow: 0 0 12px #2d0231b2, 0 0 10px var(--blanco);
+  background-color: var(--blanco); */
   border-radius: 1rem;
   padding: 1.2rem 0;
 }
@@ -417,6 +417,7 @@ h3 {
 @media (max-width: 768px) {
 
   body {
+    width: 100%;
     min-width: 100vw;
     margin: 0;
     background-color: var(--blanco);
@@ -444,7 +445,6 @@ h3 {
   .contenedor {
     height: 100%;
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
     border-radius: 0;
@@ -817,38 +817,6 @@ h3 {
 
 }
 
-[data-animation="fade"] {
-  opacity: 0;
-  transform: translate(100%);
-  transition: .6s ease-in .3s;
-
-  --opacity: 1;
-  --transform: translate(0);
-}
-
-[data-animation="show"] {
-  opacity: 0;
-  transform: scale(0);
-  transition: .6s ease-in .3s;
-
-  --opacity: 1;
-  --transform: scale(1);
-}
-
-[data-animation="up"] {
-  opacity: 0;
-  transform: translateY(100%);
-  transition: .6s ease-in .3s;
-
-  --opacity: 1;
-  --transform: translateY(0);
-}
-
-.unset {
-  opacity: var(--opacity);
-  transform: var(--transform);
-}
-
 /* Estilos para seccino de contacto */
 main.contenedor-contacto {
   display: grid;
@@ -1041,10 +1009,6 @@ section.mapa {
 /* Media query para versiones móviles */
 @media (max-width: 768px) {
 
-  body {
-    min-width: 100vw;
-  }
-  
   main.contenedor-contacto {
     height: 100%;
     margin-top: 4rem;
@@ -1078,4 +1042,36 @@ section.mapa {
     height: 100vh;
     min-width: 100%;
   }
+}
+
+[data-animation="fade"] {
+  opacity: 0;
+  transform: translate(100%);
+  transition: .6s ease-in .3s;
+
+  --opacity: 1;
+  --transform: translate(0);
+}
+
+[data-animation="show"] {
+  opacity: 0;
+  transform: scale(0);
+  transition: .6s ease-in .3s;
+
+  --opacity: 1;
+  --transform: scale(1);
+}
+
+[data-animation="up"] {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: .6s ease-in .3s;
+
+  --opacity: 1;
+  --transform: translateY(0);
+}
+
+.unset {
+  opacity: var(--opacity);
+  transform: var(--transform);
 }
