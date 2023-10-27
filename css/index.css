@@ -97,6 +97,10 @@ h3 {
   display: none;
 }
 
+.texto-planes {
+  font-size: 1.3rem;
+}
+
 .contenedor {
   width: 900px;
   height: 100%;
