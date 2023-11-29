@@ -185,6 +185,7 @@ h3 {
   padding: 2rem;
   background-color: var(--principal);
   overflow: hidden;
+  width: 100%;
 }
 
 .footer__drechos-autor,
@@ -571,6 +572,7 @@ h3 {
     background-color: var(--principal);
     height: 100%;
     padding: 0 1rem;
+    width: 100%;
   }
 
   .contenedor {
@@ -1042,6 +1044,7 @@ h3 {
     background-color: var(--principal);
     overflow: hidden;
     padding: 0 1.5rem;
+    width: 100%;
   }
 
   .footer__drechos-autor,
@@ -1077,8 +1080,6 @@ main.contenedor-contacto {
 main.contacto {
   min-height: 100vh;
 }
-
-
 
 /* Estilos para la card */
 .contenedor-card {
@@ -1271,6 +1272,10 @@ section.mapa {
   }
   .main-acercade h1 {
     margin-bottom: 1rem;
+  }
+
+  .contenedor-card {
+    width: 100%;
   }
   
   main.contenedor-contacto {
