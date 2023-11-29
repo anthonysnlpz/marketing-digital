@@ -17,6 +17,7 @@
 
 html {
   box-sizing: border-box;
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -27,6 +28,7 @@ body {
   margin: 0;
   background-color: var(--blanco);
   color: var(--negro);
+  overflow-y: scroll;
 }
 
 h1.nav__logo {
@@ -545,6 +547,7 @@ h3 {
     margin: 0;
     background-color: var(--blanco);
     color: var(--negro);
+    overflow-y: scroll;
   }
 
   h3 {
@@ -1290,6 +1293,7 @@ section.mapa {
 @media screen and (max-width: 375px) {
   body {
     min-width: 100%;
+    overflow-y: scroll;
   }
 
   .contenedor-contacto {
