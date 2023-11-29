@@ -1035,10 +1035,13 @@ h3 {
 
   .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    height: 5.5rem;
-    padding: 2rem;
+    row-gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    height: 8rem;
+    padding: 2rem 0;
     background-color: var(--principal);
     overflow: hidden;
     padding: 0 1.5rem;
