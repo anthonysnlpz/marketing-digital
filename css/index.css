@@ -548,8 +548,7 @@ h3 {
   }
 
   body {
-    min-width: 100%;
-    min-width: 100vw;
+    width: fit-content;
     margin: 0;
     background-color: var(--blanco);
     color: var(--negro);
@@ -1066,27 +1065,47 @@ section p {
   padding: 1rem;
 }
 
+
+.texto-contactanos {
+  text-transform: uppercase;
+  margin: 2rem auto 0;
+  text-align: center;
+  width: 100%;
+}
+
 main.contenedor-contacto {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
-    "card mapa"
+    "card card-luz"
+    "mapa mapa"
     "formulario formulario";
   row-gap: 1rem;
-  margin-top: 4rem;
+  height: 400px;
 }
 
 main.contacto {
-  min-height: 100vh;
+  height: 100%;
 }
 
 /* Estilos para la card */
 .contenedor-card {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex-direction: row;
   align-items: center;
   grid-area: card;
+  height: 450px;
+  width: 100%;
+}
+
+.contenedor-card-luz {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  grid-area: card-luz;
   height: 450px;
 }
 
@@ -1195,6 +1214,7 @@ section.mapa {
   display: flex;
   justify-content: center;
   align-items: center;
+  grid-area: mapa;
 }
 
 /* Estilos para fomrulacio de contacto */
@@ -1277,9 +1297,9 @@ section.mapa {
   .contenedor-card {
     width: 100%;
   }
-  
+
   main.contenedor-contacto {
-    height: 100%;
+    height: max-content;
     margin-top: 4rem;
     min-height: 100vh;
     transform: translateX(0);
@@ -1287,6 +1307,7 @@ section.mapa {
     /* Una sola columna */
     grid-template-areas:
       "card"
+      "card-luz"
       "mapa"
       "formulario";
     row-gap: 1rem;
