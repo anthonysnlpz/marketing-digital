@@ -541,8 +541,13 @@ h3 {
 /* Estilo para dispositivos moviles (a partir de 768px) */
 @media (max-width: 768px) {
 
+  html {
+    box-sizing: border-box;
+    scrollbar-gutter: stable;
+  }
+
   body {
-    width: 100%;
+    min-width: 100%;
     min-width: 100vw;
     margin: 0;
     background-color: var(--blanco);
@@ -1073,6 +1078,8 @@ main.contacto {
   min-height: 100vh;
 }
 
+
+
 /* Estilos para la card */
 .contenedor-card {
   display: flex;
@@ -1290,7 +1297,16 @@ section.mapa {
   }
 }
 
+section.mapa {
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 375px) {
+  html {
+    box-sizing: border-box;
+    scrollbar-gutter: stable;
+  }
+
   body {
     min-width: 100%;
     overflow-y: scroll;
