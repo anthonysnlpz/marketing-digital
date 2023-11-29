@@ -1252,7 +1252,7 @@ section.mapa {
   }
 
   .main-acercade {
-    height: 100vh;
+    height: 100%;
     width: 50ch;
     display: grid;
     place-content: center;
