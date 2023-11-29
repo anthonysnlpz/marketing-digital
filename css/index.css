@@ -1349,6 +1349,28 @@ section.mapa {
   margin: 0 auto;
 }
 
+
+/* media query para tablets */
+@media (max-width: 950px) {
+  main.contenedor-contacto {
+    height: max-content;
+    margin-top: 4rem;
+    min-height: 100vh;
+    transform: translateX(0);
+    grid-template-columns: 1fr;
+    /* Una sola columna */
+    grid-template-areas:
+      "card"
+      "card-eleganceweb"
+      "card-luz"
+      "mapa"
+      "formulario";
+    row-gap: 1rem;
+    z-index: 2;
+  }
+}
+/* media query para tablets */
+
 @media screen and (max-width: 375px) {
   html {
     box-sizing: border-box;
